@@ -12,6 +12,7 @@ echo "<ul>" .
  "<li><a href=\"./cap-2/ConcreteProtect.php\">Visibilidade protegida</a></li>" .
  "<li><a href=\"./cap-2/PublicVis.php\">Visibilidade pública</a></li>" .
  "<li><a href=\"./cap-2/GetSet.php\">Getters e Setters</a></li>" .
+ "<li><a href=\"./cap-2/Client.php\">Herança</a></li>" .
  "</ul>" .
  "</li>" .
  "</ul>";
