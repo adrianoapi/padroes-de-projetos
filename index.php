@@ -9,6 +9,8 @@ echo "<ul>" .
  "<li><a href=\"./cap-2/ConSQL.php\">classe interface constant</a></li>" .
  "<li><a href=\"./cap-2/UseProducts.php\">classe interface indução tipo</a></li>" .
  "<li><a href=\"./cap-2/PrivateVis.php\">Visibilidade privada</a></li>" .
+ "<li><a href=\"./cap-2/ConcreteProtect.php\">Visibilidade protegida</a></li>" .
+ "<li><a href=\"./cap-2/PublicVis.php\">Visibilidade pública</a></li>" .
  "</ul>" .
  "</li>" .
  "</ul>";
