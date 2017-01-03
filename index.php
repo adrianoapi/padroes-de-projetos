@@ -13,6 +13,7 @@ echo "<ul>" .
  "<li><a href=\"./cap-2/PublicVis.php\">Visibilidade pública</a></li>" .
  "<li><a href=\"./cap-2/GetSet.php\">Getters e Setters</a></li>" .
  "<li><a href=\"./cap-2/Client.php\">Herança</a></li>" .
+ "<li><a href=\"./cap-2/Poly.php\">Polimorfismo</a></li>" .
  "</ul>" .
  "</li>" .
  "</ul>";
