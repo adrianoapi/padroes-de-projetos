@@ -20,6 +20,7 @@ echo null .
  "  <li>Capítulo 3" .
  "      <ul>" .
  "          <li><a href=\"./cap-3/classes-abstratas-interfaces/Client.php\">Classes abstratas e suas interfaces</a></li>" .
+ "          <li>Diferença entre <a href=\"./cap-3/classes-heranca-composicao/Client.php\">herança</a> e <a href=\"./cap-3/classes-heranca-composicao/ClientCompose.php\">composição</a></li>" .
  "      </ul>" .
  "  </li>" .
  "</ul>";
