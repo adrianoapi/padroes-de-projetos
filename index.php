@@ -23,4 +23,9 @@ echo null .
  "          <li>Diferença entre <a href=\"./cap-3/classes-heranca-composicao/Client.php\">herança</a> e <a href=\"./cap-3/classes-heranca-composicao/ClientCompose.php\">composição</a></li>" .
  "      </ul>" .
  "  </li>" .
+ "  <li>Capítulo 5" .
+ "      <ul>" .
+ "          <li><a href=\"./cap-5/factory/Client.php\">Tarefa da factory</a></li>" .
+ "      </ul>" .
+ "  </li>" .
  "</ul>";
