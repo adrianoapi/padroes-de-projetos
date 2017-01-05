@@ -26,6 +26,7 @@ echo null .
  "  <li>Capítulo 5" .
  "      <ul>" .
  "          <li><a href=\"./cap-5/factory/Client.php\">Tarefa da factory</a></li>" .
+ "          <li><a href=\"./cap-5/factory-alteracoes/Client.php\">Acomodando alterações</a></li>" .
  "      </ul>" .
  "  </li>" .
  "</ul>";
