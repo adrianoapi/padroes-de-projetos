@@ -28,8 +28,8 @@ class Client
         $this->setEmployee($Olivia, "Olivia Perez", 301, "op301-1278", "enginner.jpg");
         $this->showEmployee($Olivia);
         $John = clone $this->engineer;
-        $this->setEmployee($Jacob, "John Jackson", 301, "jj302-1454", "enginner-2.jpg");
-        $this->showEmployee($Jacob);
+        $this->setEmployee($John, "John Jackson", 301, "jj302-1454", "enginner-2.jpg");
+        $this->showEmployee($John);
     }
 
     public function makeConPro()
