@@ -29,4 +29,9 @@ echo null .
  "          <li><a href=\"./cap-5/factory-alteracoes/Client.php\">Acomodando alterações</a></li>" .
  "      </ul>" .
  "  </li>" .
+ "  <li>Capítulo 6" .
+ "      <ul>" .
+ "          <li><a href=\"./cap-6/funcao-clonagem/CloneMe.php\">Funcção para clonagem</a></li>" .
+ "      </ul>" .
+ "  </li>" .
  "</ul>";
