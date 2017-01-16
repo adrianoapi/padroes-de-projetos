@@ -36,5 +36,9 @@ echo null .
  "          <li><a href=\"./cap-6/prototype-minimalista/Client.php\">Exemplo prototype minimalista</a></li>" .
  "          <li><a href=\"./cap-6/poo-prototype/Client.php\">OO no Prototype</a></li>" .
  "      </ul>" .
+ "  <li>Capítulo 7" .
+ "      <ul>" .
+ "          <li><a href=\"./cap-7/adapter-heranca/Client.php\">Adapter herança</a></li>" .
+ "      </ul>" .
  "  </li>" .
  "</ul>";
