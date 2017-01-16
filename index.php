@@ -31,7 +31,8 @@ echo null .
  "  </li>" .
  "  <li>Capítulo 6" .
  "      <ul>" .
- "          <li><a href=\"./cap-6/funcao-clonagem/CloneMe.php\">Funcção para clonagem</a></li>" .
+ "          <li><a href=\"./cap-6/funcao-clonagem/CloneMe.php\">Função para clonagem</a></li>" .
+ "          <li><a href=\"./cap-6/funcao-clonagem/HelloClone.php\">Construtor não é clonado</a></li>" .
  "      </ul>" .
  "  </li>" .
  "</ul>";
