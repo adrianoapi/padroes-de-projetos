@@ -8,52 +8,54 @@ function __autoload($class_name)
 class Client
 {
 
-    //Para a instaciação direta
-    private $fly1;
-    private $fly2;
-    //Para clonagem
-    private $c1Fly;
-    private $c2Fly;
-    private $updatedCloneFly;
+    private $market;
+    private $manage;
+    private $engineer;
 
     public function __construct()
     {
-        $this->fly1 = new MaleProto();
-        $this->fly2 = new FemaleProto();
-
-        //clona
-        $this->c1Fly = clone $this->fly1;
-        $this->c2Fly = clone $this->fly2;
-        $this->updatedCloneFly = clone $this->fly2;
-
-        //atualiza clones
-        $this->fly1->mated = "true";
-        $this->fly2->fecundity = "186";
-        $this->updatedCloneFly->eyeColor = "purple";
-        $this->updatedCloneFly->wingBeat = "220";
-        $this->updatedCloneFly->unitEyes = "750";
-        $this->updatedCloneFly->fecundity = "92";
-
-        //Eniva por meio de método que usa indução de tipo
-        $this->showFly($this->fly1);
-        $this->showFly($this->fly2);
-        $this->showFly($this->updatedCloneFly);
+        $this->makeConPro();
+        $Tess = clone $this->market;
+        $this->setEmployee($Tess, "Tess Smith", 101, "ts101-1234", "market.jpg");
+        $this->showEmployee($Tess);
+        $Jacob = clone $this->market;
+        $this->setEmployee($Jacob, "Jacob Jonrd", 102, "jj101-2234", "market-2.jpg");
+        $this->showEmployee($Jacob);
+        $Ricky = clone $this->manage;
+        $this->setEmployee($Ricky, "Rick Rodriguez", 203, "rr203-5634", "manage.jpg");
+        $this->showEmployee($Ricky);
+        $Olivia = clone $this->engineer;
+        $this->setEmployee($Olivia, "Olivia Perez", 301, "op301-1278", "enginner.jpg");
+        $this->showEmployee($Olivia);
+        $John = clone $this->engineer;
+        $this->setEmployee($Jacob, "John Jackson", 301, "jj302-1454", "enginner-2.jpg");
+        $this->showEmployee($Jacob);
     }
 
-    public function showFly(IPrototype $fly)
+    public function makeConPro()
     {
-        echo "Eye color: " . $fly->eyeColor . "<br/>";
-        echo "Wing Beats/second: " . $fly->wingBeat . "<br/>";
-        echo "Eye units: " . $fly->unitEyes . "<br/>";
-        $genderNow = $fly::gender;
-        echo "Gender: ";
-        $genderNow . "<br/>";
-        if ($genderNow == "FEMALE") {
-            echo "Number of eggs: " . $fly->fecundity . "<p/>";
-        } else {
-            echo "Mated: " . $fly->mated . "<p/>";
-        }
+        $this->market = new Marketing();
+        $this->manage = new Management();
+        $this->engineer = new Engineering();
+    }
+
+    public function showEmployee(IAcmePrototype $employeeNow)
+    {
+        $px = $employeeNow->getPic();
+        echo "<img src=$px width='150' height='150'><br/>";
+        echo $employeeNow->getName() . "<br/>";
+        echo $employeeNow->getDept() . ": " . $employeeNow::UNIT . "<br/>";
+        echo $employeeNow->getId() . "<p/>";
+    }
+
+    public function setEmployee(IAcmePrototype $employeeNow, $nm, $dp, $id, $px)
+    {
+        $employeeNow->setName($nm);
+        $employeeNow->setDept($dp);
+        $employeeNow->setId($id);
+        $employeeNow->setPid("../../assets/img/$px");
     }
 
 }
+
 $worker = new Client();

@@ -34,6 +34,7 @@ echo null .
  "          <li><a href=\"./cap-6/funcao-clonagem/CloneMe.php\">Função para clonagem</a></li>" .
  "          <li><a href=\"./cap-6/funcao-clonagem/HelloClone.php\">Construtor não é clonado</a></li>" .
  "          <li><a href=\"./cap-6/prototype-minimalista/Client.php\">Exemplo prototype minimalista</a></li>" .
+ "          <li><a href=\"./cap-6/poo-prototype/Client.php\">OO no Prototype</a></li>" .
  "      </ul>" .
  "  </li>" .
  "</ul>";
