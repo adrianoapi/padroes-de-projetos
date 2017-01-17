@@ -1,8 +1,8 @@
 <?php
 
-require_once 'IFormat.php';
+require_once 'IMobileFormat.php';
 
-class Descktop implements IFormat
+class Mobile implements IMobileFormat
 {
 
     private $head = "<!doctype html><html><head>";
@@ -15,7 +15,7 @@ class Descktop implements IFormat
     public function formatCSS()
     {
         echo $this->head;
-        echo "<link rel='stylesheet' href='../../assets/css/cap-7-adapter-composicao.css'>";
+        echo "<link rel='stylesheet' href='../../assets/css/cap-7-adapter-composicao-mobile.css'>";
         echo $this->headClose;
         echo "<h1>Hello, Everyone!</h1>";
     }
@@ -25,7 +25,7 @@ class Descktop implements IFormat
         echo "<img clss='pixRight' src='../../assets/img/okami.jpg' width='' height='' alt='river'>";
     }
 
-    public function horizontalLayout()
+    public function verticalLayout()
     {
         $textFile = "../../assets/files/lorem.text";
         $openText = fopen($textFile, 'r');

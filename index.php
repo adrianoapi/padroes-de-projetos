@@ -39,6 +39,7 @@ echo null .
  "  <li>Capítulo 7" .
  "      <ul>" .
  "          <li><a href=\"./cap-7/adapter-heranca/Client.php\">Adapter herança</a></li>" .
+ "          <li><a href=\"./cap-7/adapter-composicao/Client.php\">Adapter composição</a></li>" .
  "      </ul>" .
  "  </li>" .
  "</ul>";
