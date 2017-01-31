@@ -1,5 +1,6 @@
 <?php
 
+//Filename: IConnectInfo.php
 interface IConnectInfo
 {
 
@@ -8,5 +9,7 @@ interface IConnectInfo
     const PW = "";
     const DBNAME = "lab_padroes_projetos";
 
-    public function doConnetc();
+    public function doConnect();
 }
+
+?>

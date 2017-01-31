@@ -1,6 +1,6 @@
 <?php
 
-require_once 'IConnectInfo.php';
+include_once('IConnectInfo.php');
 
 class UniversalConnect implements IConnectInfo
 {
@@ -11,13 +11,14 @@ class UniversalConnect implements IConnectInfo
     private static $pass = IConnectInfo::PW;
     private static $hookup;
 
-    public function doConnetc()
+    public function doConnect()
     {
         self::$hookup = mysqli_connect(self::$server, self::$user, self::$pass, self::$currentDB);
         if (self::$hookup) {
-            echo "Sucesso ao aonectar no MySQL";
-        } elseif (mysqli_connect_error(slef::$hookup)) {
-            echo "Falha na conexão: " . mysqli_connect_error();
+//Remove slashes in following line for debugging
+echo "Successful connection to MySQL:";
+        } elseif (mysqli_connect_error(self::$hookup)) {
+            echo('Here is why it failed: ' . mysqli_connect_error());
         }
         return self::$hookup;
     }
