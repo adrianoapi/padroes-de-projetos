@@ -16,7 +16,7 @@ class UniversalConnect implements IConnectInfo
         self::$hookup = mysqli_connect(self::$server, self::$user, self::$pass, self::$currentDB);
         if (self::$hookup) {
 //Remove slashes in following line for debugging
-echo "Successful connection to MySQL:";
+//echo "Successful connection to MySQL:";
         } elseif (mysqli_connect_error(self::$hookup)) {
             echo('Here is why it failed: ' . mysqli_connect_error());
         }

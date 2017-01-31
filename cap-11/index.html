@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link rel="stylesheet" href="proxy.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Username/Password Registration</title>
+        <style type="text/css">
+            @charset "UTF-8";
+            /* CSS Document */
+            /*EFECCA,046380,002F2F */
+            body {
+                margin-left:20px;
+                font-family:Verdana, Geneva, sans-serif;
+                background-color:#EFECCA;
+            }
+            header {font-family: "Arial Black", Gadget, sans-serif;
+                    font-size:24px;
+                    color:#002F2F;
+            }
+            #entry {
+                font-size:11;
+                color:#046380;
+            }
+            .subhead
+            {
+                font-size:16px;
+                font-family:Verdana, Geneva, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <header>Registration</header>
+        <section>
+            <article id="entry">
+                <form action="HashRegister.php" method="post">
+                    Username: (15 Characters Max-No spaces)<br/>
+                    <input type="text" name="uname" maxlength="15">
+                    <br/>
+                    Password: (10 Characters Max-No spaces)<br/>
+                    <input type="password" name="pw" maxlength="10">
+                    <br/>
+                    <input type="submit" value="Register">
+                </form>
+            </article>
+        </section>
+    </body>
+</html>
