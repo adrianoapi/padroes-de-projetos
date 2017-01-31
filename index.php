@@ -41,5 +41,9 @@ echo null .
  "          <li><a href=\"./cap-7/adapter-heranca/Client.php\">Adapter herança</a></li>" .
  "          <li><a href=\"./cap-7/adapter-composicao/Client.php\">Adapter composição</a></li>" .
  "      </ul>" .
+ "  <li>Capítulo 11" .
+ "      <ul>" .
+ "          <li><a href=\"./cap-11/Client.php\">Conexão universal</a></li>" .
+ "      </ul>" .
  "  </li>" .
  "</ul>";
